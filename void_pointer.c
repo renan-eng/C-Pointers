@@ -10,3 +10,4 @@ int main()
     void *p0;
     p0 = p;
     printf("Address = %d\n",p0);
+}
