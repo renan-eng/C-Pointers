@@ -1,4 +1,4 @@
-# INTRUDUÇÃO A PONTEIROS EM C/C++
+# INTRODUÇÃO A PONTEIROS EM C/C++
 ## O que são ponteiros?
 Ponteiros são variáveis especiais que são utilizadas para armazenar endereços de memória.
 ## Sintaxe de ponteiros em C
