@@ -38,6 +38,7 @@ Para acessar o valor da váriavel que um ponteiro aponta devemos usar o operador
     pc = &c;
     printf("%d", *pc);   // Output: 5
 ```
+***
 ## Ponteiro de um ponteiro
 É possível crair ponteiros que irão apontar para um endereço de outro ponteiro que por sua vez aponta para uma variável. Observe o exemplo abaixo.
 ```c
@@ -62,6 +63,7 @@ int main()
     return 0;
 }
 ```
+***
 ## Void Pointer (ponteiro do tipo Void)
 Um ponteiro do tipo void é um ponteiro que não tem um tipo de dado associado a ele. Um ponteiro do tipo void pode armazenar o endereço de qualquer tipo de variável (int, char, double...).
 ```c
@@ -72,3 +74,20 @@ Um ponteiro do tipo void é um ponteiro que não tem um tipo de dado associado a
     p = &b; // ponteiro void p pode aramazenar o endereço de char 'b'
 ```
 OBS.: Ponteiros do tipo void não podem ser desreferenciados.
+***
+## Pointers e Arrrays
+O array `int a[5]` será guardado na memória sequencialmente conforme a figura abaixo.
+<p align="center">
+  <img src="./img/memory_map.jpg" alt="Exemplo de alocação de memória" />
+</p>
+
+Como os elementos estão alocados sequencialmente isso permite utilizar operações com ponteiros para acessar qualquer endereço na memory ou seu valor guardado por um array.
+
+Exemplo 1:
+```c
+    int a[5] = {2, 4, 5, 6, 7};
+    int *p;
+    p = a;
+    printf("%d\n", a); // output = 489110672 [endereço na memoria convertido para seu formato decimal]
+    printf("%d\n", *a); // output = 2 [primeiro elemento do array]
+```
