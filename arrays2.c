@@ -10,4 +10,7 @@ int main()
     printf("value = %d\n", a[i]); // retorna o valor do primero elemento do array a
     printf("value = %d\n", *(a+i)); // também retorna o valor do primero elemento do array a
     }
+
+    int num = *a;
+    printf("%d\n",num);
 }
